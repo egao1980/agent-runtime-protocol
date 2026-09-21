@@ -39,6 +39,10 @@ Conditions (AX-shaped, local-valid): `:workspace-ready`, `:gateway-ready`, `:rea
 
 The in-memory backend materializes fake workspace dirs (git entries → empty dirs + marker files) under `uiop:temporary-directory` or an explicit `:root`. Suspend/resume preserve a path→string file map. It does **not** implement AX gRPC, Redis, Kubernetes, or CRIU.
 
+```bash
+sbcl --load examples/lifecycle.lisp
+```
+
 ## License
 
 MIT
